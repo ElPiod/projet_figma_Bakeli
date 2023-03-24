@@ -504,7 +504,7 @@ h3{
 		justify-content: center;
 	}
 	.link a{
-		font-size: 6px;
+		font-size: 10px;
 	}
 	.formation{
 		background-image: url(images/img.jpeg);
@@ -520,7 +520,7 @@ h3{
 	}
 	a{
 		font-size: 25px;
-		padding: 10px;
+		padding: 5px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
@@ -610,6 +610,10 @@ h3{
 	footer .flex{
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+	}
+	.service{
+		text-align: center;
 	}
 	.contact{
 		font-size: 15px;
