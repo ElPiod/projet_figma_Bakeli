@@ -1,14 +1,10 @@
 body{
 	padding: 0;
 	margin: 0;
-	width: 100%;
-	height: 100%;
 }
 
 /* Nous sommes Home */
 .container{
-	width: 100%;
-	height: 100%;
 	margin: 0 auto;
 }
 .home{
@@ -114,9 +110,12 @@ a{
 	background-position: 50%;
 	position: relative;
 }
+.mere{
+	display: flex;
+	flex-direction: column;
+	align-items: center ;
+}
 .h1, .h2, .h3{
-	position: relative;
-	top: 230px;
 	font-family: sans-serif;
 	font-weight: 1 1000;
 	color: black;
@@ -124,9 +123,7 @@ a{
 	text-align: center;
 }	
 .p3, .p4, .p5{
-	position: relative;
-	top: 230px;
-	right: 15px;
+	
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	font-size: 12px;
@@ -442,85 +439,16 @@ h3{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 400px 400px;
 	}
+	.team{
+		height: auto;
+	}
 	/* fin pourcentage */
 	.contact{
 		font-size: 15px;
 	}
 }
-@media screen and (max-width: 528px){
-	.container{
-		display: block;
-	}
-	/* partie 1 */
-	.home{
-		display: block;
-	}
-	.link{
-		padding: 20px;
-		padding-left: 100px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	.formation{
-		background-image: url(images/img.jpeg);
-		background-size: cover;
-		width: 175%;
-		height: 691px;
-		
-	}
+@media screen and (max-width: 620px){
 	
-	.background{
-		background: rgba(81, 181, 161, 0.55);
-		width: 100%;
-		height: 100%;
-	}
-	a{
-		font-size: 25px;
-	}
-	/* fin de partie */
-	/* partie 2 */
-	.p1{
-		position: relative;
-	}
-	/* Programmes */
-	.programmes{
-		display: flex;
-		gap: 50px;
-		padding-left: 305px;
-		width: auto;
-		height: 200px;
-	}
-	.programmes .programmation{
-		width: 150px;
-		height: 150px;
-	}
-	.programmes .design{
-		width: 150px;
-		height: 150px;
-	}
-	.programmes .marketing{
-		width: 150px;
-		height: 150px;
-	}
-	/* fin programmes */
-	/* bakeli */
-	.bakeli{
-		width: 137%;
-	}
-	.p6{
-		font-size: 14px;
-		word-spacing: 10px;
-	}
-	/* fin bakeli */
-	/* les-logos */
-	.les_logos{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.wordpress, .html_css, .canva, .Adope, .insckape, .python, .java, .Js{
-		width: 372px;
-		height: 400px;
-	}
 	/* Pourcentage */
 	.space{
 		display: grid;
@@ -554,28 +482,33 @@ h3{
 	footer{
 		width: 150%;
 	}
+	footer .info{
+		display: flex;
+		flex-direction: column;
+	}
 	.contact{
 		font-size: 15px;
 	}
 }
-@media screen and (max-width: 328px){
+@media screen and (max-width: 620px){
 	.container{
 		display: block;
+		width: auto;
 	}
 	/* partie 1 */
-	.home{
-		display: block;
-	}
+	
 	.link{
-		padding: 20px;
-		padding-left: 120px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		justify-content: center;
+	}
+	.link a{
+		font-size: 6px;
 	}
 	.formation{
 		background-image: url(images/img.jpeg);
 		background-size: cover;
-		width: 230%;
 		height: 691px;
 		
 	}
@@ -587,6 +520,9 @@ h3{
 	}
 	a{
 		font-size: 25px;
+		padding: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	/* fin de partie */
 	/* partie 2 */
@@ -596,75 +532,81 @@ h3{
 	/* Programmes */
 	.programmes{
 		display: flex;
-		gap: 50px;
-		padding-left: 365px;
-		width: auto;
-		height: 200px;
-	}
-	.programmes .programmation{
-		width: 150px;
-		height: 150px;
-	}
-	.programmes .design{
-		width: 150px;
-		height: 150px;
-	}
-	.programmes .marketing{
-		width: 150px;
-		height: 150px;
+		flex-direction: column;
+		
 	}
 	/* fin programmes */
 	/* bakeli */
 	.bakeli{
-		width: 183%;
+		width: auto;
 	}
 	.p6{
 		font-size: 14px;
 		word-spacing: 10px;
 	}
+	.p1{
+		width: auto;
+		font-size: 15px;
+		padding: 7px;
+	}
+	.p2{
+		font-size: 12px;
+	}
 	/* fin bakeli */
 	/* les-logos */
 	.les_logos{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 	.wordpress, .html_css, .canva, .Adope, .insckape, .python, .java, .Js{
-		width: 372px;
+		width: auto;
 		height: 400px;
 	}
 	/* Pourcentage */
 	.space{
 		display: grid;
-		grid-template-columns: 424px;
+		grid-template-columns: auto;
 		grid-template-rows: 100px 100px 100px 100px;
-		padding-left: 350px;
+		padding: 0;
 	}
+	progress{
+		width: 100%;
+	}
+	.pourcentage{
+		width: 100%;
+	}
+	
 	.text{
 		position: relative;
-		left: 60%;
+		left: 0;
 	}
 	/* fin */
 	/* team */
 	.team{
-		width: 200%;
-		height: 1000px;
+		width: auto;
+		height: auto;
+		padding: 22px;
 	}
 	.coach{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-template-rows: 400px 400px;
+		
 	}
 	/* fin pourcentage */
 	/* evenement */
 	.evenement{
-		width: 130%;
+		width: auto;
 		text-align: center;
-		padding-left: 150px;
 	}
 	/* fin */
 	/* footer */
 	footer{
-		width: 200%;
+		width: auto;
+	}
+	footer .flex{
+		display: flex;
+		flex-direction: column;
 	}
 	.contact{
 		font-size: 15px;
