@@ -585,13 +585,16 @@ h3{
 	.team{
 		width: auto;
 		height: auto;
-		padding: 22px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
 	}
 	.coach{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 400px 400px;
-		
+		grid-template-rows: 400px 400px;		
 	}
 	/* fin pourcentage */
 	/* evenement */
